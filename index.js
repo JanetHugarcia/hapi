@@ -1,4 +1,5 @@
 const Hapi = require('@hapi/hapi');
+var routes = require('./main/routes/rutas');
 
 const krowdy = Hapi.server({
     port: 4000,
@@ -9,11 +10,4 @@ krowdy.start()
 
 console.log('Server running on %s', krowdy.info.uri);
 
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: (req, res, next) => {
-
-        return 'Hello World!';
-    }
-});
+krowdy.route(routes);
