@@ -1,4 +1,4 @@
-exports.data = {
+let data = {
   1: {
     idproduct: 1,
     owner: "Angelo",
@@ -21,3 +21,7 @@ exports.data = {
     description: "un zapato"
   }
 };
+
+module.exports = {
+  data: data
+}
