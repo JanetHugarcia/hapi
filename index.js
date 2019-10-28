@@ -1,7 +1,7 @@
 const Hapi = require('@hapi/hapi');
 var routes = require('./main/routes/rutas');
 let data = require('./main/bd/data');
-console.log(data, 'data');
+console.log(routes)
 
 
 const krowdy = Hapi.server({
